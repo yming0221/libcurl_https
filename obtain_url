@@ -1,0 +1,30 @@
+#!/bin/bash
+
+#This shell is used to download the webpage and obtain the link token,
+#because this is unvisable before this time.Last we save the url in the 
+#file seckill_url.
+
+rm index.html -f
+
+wget http://10.xiaomi.com
+
+url=`cat index.html | grep token`
+echo $url
+cnt=`echo $url | grep token | wc -l`
+
+if [ $cnt -eq 0  ]; then
+	echo "Not Ready! Please try again later!"
+else
+url=${url#*href=\"}
+echo $url
+url=${url%onclick*}
+echo $url
+url=${url%\" }
+echo $url
+echo $url>seckill_url
+fi
+unset url
+
+
+
+

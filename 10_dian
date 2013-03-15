@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#First run the shell obtain_url
+./obtain_url
+
+#Second move the url to the configuration file : commodity_info
+echo "COMMODITY_10_DIAN	 http://10.xiaomi.com`cat seckill_url`" >> commodityinfo
+
+#Then run the client xiaomi
+./xiaomi

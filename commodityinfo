@@ -1,0 +1,9 @@
+MI1S_4_URL				http://t.hd.xiaomi.com/index.php?_a=20121010&_op=dobook
+#MI1S_4_URL				http://
+#MI1S_4_REFER_URL		http://order.xiaomi.com
+
+#ADD_TO_CART				http://order.xiaomi.com/cart/add/1305-0-1
+#ADD_TO_CART				http://order.xiaomi.com/cart/empty
+#ADD_TO_CART				http://order.xiaomi.com/cart
+#COMMODITY_10_DIAN		 http://10.xiaomi.com/seckill?token=5f236fff3f60b29087c680bee5b05522
+

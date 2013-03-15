@@ -1,0 +1,7 @@
+#!/bin/bash
+cat user_register | while read LINE
+do
+	LINE=${LINE#*电话:}
+	LINE=${LINE%,邮件*}
+	echo $LINE >> auth_telephone
+done
